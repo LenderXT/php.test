@@ -86,5 +86,26 @@ $auto = [$bmw, $toyota, $opel]
 </table>
 </body>
 </html>
+<table>
 
+<?php
+/* Задание №7 */
+for($x = 1;$x < 10;$x++) {
+     echo"<tr>";
+          for($y = 2;$y < 10;$y++) {
+              echo "<td> $x * $y=" . $x * $y . "</td>";
+          } echo "</tr>";
+}
+?>
+</table>
+<?php
+/* Задание №8 */
+$str='fla vac huva';
+$rts= explode(" ", $str);
+var_dump($rts);
+$str = end($rts);
+do {
+    echo $str;
+} while (($str = prev($rts)));
 
+?>
